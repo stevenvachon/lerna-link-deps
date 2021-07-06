@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "multi-package-project",
+  "version": "0.0.0",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "scripts": {
+    "postinstall": "lerna bootstrap"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "lerna-link-deps",
+  "description": "Symlink all instances of a dependency within a Lerna multi-package project.",
+  "version": "0.0.1",
+  "bin": {
+    "lerna-link-deps": "cli.js"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "dependencies": {
+    "@lerna/project": "^4.0.0",
+    "execa": "^5.1.1",
+    "optionator": "~0.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "fs-extra": "^10.0.0",
+    "import-fresh": "^3.3.0",
+    "isurl": "^4.0.2",
+    "mocha": "^9.0.2"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "test": "mocha test.js --bail --check-leaks --timeout=5000"
+  }
+}
